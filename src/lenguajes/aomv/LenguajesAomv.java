@@ -16,7 +16,7 @@ public class LenguajesAomv {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("MI PRIMER PROYECTO");
+        System.out.println("MI PRIMER PROYECTO CON ESTA COSA TAN BONITA ");
     }
     
 }
