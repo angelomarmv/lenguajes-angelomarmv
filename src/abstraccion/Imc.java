@@ -10,10 +10,37 @@ package abstraccion;
  * @author T-107
  */
 public class Imc {
+   //PRIMER PASO CONSTRUCTOR POR DEFECTO
+    public Imc(){
+    }
     
-    
-float peso;
-float altura;
+  //PONEMOS PRIVADO A PESO Y ALTURA  
+private float peso;
+private float altura;
+private boolean flaco;
+public void setFlaco(boolean flaco){
+   this.flaco=flaco;
+
+}
+public boolean isFaclo(){
+return flaco;
+}
+
+public void setPeso(float peso){
+this.peso=peso;
+
+}
+public void setAltura(float altura){
+this.altura=altura;
+}
+
+public float getAltura(){
+return altura;
+}
+
+public float getPeso(){
+return peso;
+}
 
 public Imc(float p,float a){
 peso=p;
