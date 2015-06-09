@@ -35,7 +35,7 @@ public class practica1 extends javax.swing.JFrame {
         transformar = new javax.swing.JButton();
         retro = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        hola = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,7 +63,7 @@ public class practica1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("jLabel3");
+        hola.setText("jLabel3");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -72,7 +72,7 @@ public class practica1 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
+                    .addComponent(hola)
                     .addComponent(jButton2)
                     .addComponent(transformar)
                     .addComponent(tran, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -94,7 +94,7 @@ public class practica1 extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(hola)
                 .addGap(27, 27, 27))
         );
 
@@ -114,15 +114,16 @@ public class practica1 extends javax.swing.JFrame {
 
     private void transformarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transformarActionPerformed
         // TODO add your handling code here:
-        String hola= "como no";
-         
-        
+        String hola= retro.getText();
       byte []algo= hola.getBytes();
-      for(byte b:algo){
-        System.out.println(b);
-        retro.setText(""+b);
+      StringBuilder builder=new StringBuilder();
       
-      }
+      
+      for(byte b:algo){
+          builder.append((char)b);
+          builder.append(',');
+         }
+      
         
     }//GEN-LAST:event_transformarActionPerformed
 
@@ -179,9 +180,9 @@ public class practica1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel hola;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel retro;
     private javax.swing.JTextField tran;
