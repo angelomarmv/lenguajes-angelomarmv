@@ -20,6 +20,14 @@ public class UsuarioMain {
         
         Usuario u1=new Usuario("juan",42,"jcampos@gmail.com" ,new Direccion(07550,"Ecatepec"));
         System.out.println(u1.getDireccion().getMunicipio());
+        
+        
+        Bebida bebida=new Bebida();
+        bebida.setTipo("alcoholicas");
+        String[] reco= bebida.obtenerRecomendaciones();
+        for(String be:reco){
+            System.out.println("Bebida"+be);
+        }
        
     }
     
