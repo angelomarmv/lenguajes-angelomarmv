@@ -12,7 +12,7 @@ package collections;
 public class Usuario {
     
     private String  nombre;
-    private int edad;
+    private Integer edad;
     private String email;
 
     public Usuario(String nombre, int edad, String email) {
@@ -29,11 +29,11 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
